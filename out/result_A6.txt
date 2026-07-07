@@ -1,0 +1,139 @@
+
+============================================================
+A6 group association scheme and the twisted partition
+============================================================
+
+1. Basic group data
+   |A6| = 360
+   x0 = (1,2,3,4,5)
+
+2. Conjugacy class sizes in the paper's order
+   C_0 has size 1
+   C_(2,2) has size 45
+   C_(3) has size 40
+   C_(3,3) has size 40
+   C_(4,2) has size 90
+   C_(5)_1 has size 72
+   C_(5)_2 has size 72
+   Total size = 360
+
+3. Intersection matrices B_i
+   B_0 = [ [ 1, 0, 0, 0, 0, 0, 0 ], [ 0, 1, 0, 0, 0, 0, 0 ], 
+  [ 0, 0, 1, 0, 0, 0, 0 ], [ 0, 0, 0, 1, 0, 0, 0 ], [ 0, 0, 0, 0, 1, 0, 0 ], 
+  [ 0, 0, 0, 0, 0, 1, 0 ], [ 0, 0, 0, 0, 0, 0, 1 ] ]
+   B_(2,2) = [ [ 0, 1, 0, 0, 0, 0, 0 ], [ 45, 4, 9, 9, 4, 5, 5 ], 
+  [ 0, 8, 9, 0, 4, 5, 5 ], [ 0, 8, 0, 9, 4, 5, 5 ], 
+  [ 0, 8, 9, 9, 17, 10, 10 ], [ 0, 8, 9, 9, 8, 10, 10 ], 
+  [ 0, 8, 9, 9, 8, 10, 10 ] ]
+   B_(3) = [ [ 0, 0, 1, 0, 0, 0, 0 ], [ 0, 8, 9, 0, 4, 5, 5 ], 
+  [ 40, 8, 10, 2, 0, 5, 5 ], [ 0, 0, 2, 2, 8, 5, 5 ], 
+  [ 0, 8, 0, 18, 12, 10, 10 ], [ 0, 8, 9, 9, 8, 5, 10 ], 
+  [ 0, 8, 9, 9, 8, 10, 5 ] ]
+   B_(3,3) = [ [ 0, 0, 0, 1, 0, 0, 0 ], [ 0, 8, 0, 9, 4, 5, 5 ], 
+  [ 0, 0, 2, 2, 8, 5, 5 ], [ 40, 8, 2, 10, 0, 5, 5 ], 
+  [ 0, 8, 18, 0, 12, 10, 10 ], [ 0, 8, 9, 9, 8, 5, 10 ], 
+  [ 0, 8, 9, 9, 8, 10, 5 ] ]
+   B_(4,2) = [ [ 0, 0, 0, 0, 1, 0, 0 ], [ 0, 8, 9, 9, 17, 10, 10 ], 
+  [ 0, 8, 0, 18, 12, 10, 10 ], [ 0, 8, 18, 0, 12, 10, 10 ], 
+  [ 90, 34, 27, 27, 16, 20, 20 ], [ 0, 16, 18, 18, 16, 20, 20 ], 
+  [ 0, 16, 18, 18, 16, 20, 20 ] ]
+   B_(5)_1 = [ [ 0, 0, 0, 0, 0, 1, 0 ], [ 0, 8, 9, 9, 8, 10, 10 ], 
+  [ 0, 8, 9, 9, 8, 5, 10 ], [ 0, 8, 9, 9, 8, 5, 10 ], 
+  [ 0, 16, 18, 18, 16, 20, 20 ], [ 72, 16, 9, 9, 16, 20, 11 ], 
+  [ 0, 16, 18, 18, 16, 11, 11 ] ]
+   B_(5)_2 = [ [ 0, 0, 0, 0, 0, 0, 1 ], [ 0, 8, 9, 9, 8, 10, 10 ], 
+  [ 0, 8, 9, 9, 8, 10, 5 ], [ 0, 8, 9, 9, 8, 10, 5 ], 
+  [ 0, 16, 18, 18, 16, 20, 20 ], [ 0, 16, 18, 18, 16, 11, 11 ], 
+  [ 72, 16, 9, 9, 16, 11, 20 ] ]
+
+4. Original S identities
+   C_(2,2) * S value sets on classes [ "0", "(2,2)", "(3)", "(3,3)", 
+  "(4,2)", "(5)_1", "(5)_2" ] = [ [ 0 ], [ 0 ], [ 0 ], [ 0 ], [ 0 ], [ 0 ], 
+  [ 0 ] ]
+   C_(4,2) * S value sets on classes [ "0", "(2,2)", "(3)", "(3,3)", 
+  "(4,2)", "(5)_1", "(5)_2" ] = [ [ 0 ], [ 0 ], [ 0 ], [ 0 ], [ 0 ], [ 0 ], 
+  [ 0 ] ]
+   C_(3) * S value sets on classes [ "0", "(2,2)", "(3)", "(3,3)", "(4,2)", 
+  "(5)_1", "(5)_2" ] = [ [ 0 ], [ 0 ], [ 0 ], [ 0 ], [ 0 ], [ -5 ], [ 5 ] ]
+   C_(3,3) * S value sets on classes [ "0", "(2,2)", "(3)", "(3,3)", 
+  "(4,2)", "(5)_1", "(5)_2" ] = [ [ 0 ], [ 0 ], [ 0 ], [ 0 ], [ 0 ], [ -5 ], 
+  [ 5 ] ]
+   S^2 value sets on classes [ "0", "(2,2)", "(3)", "(3,3)", "(4,2)", 
+  "(5)_1", "(5)_2" ] = [ [ 144 ], [ 0 ], [ -18 ], [ -18 ], [ 0 ], [ 9 ], 
+  [ 9 ] ]
+
+5. The cut number cr(x) and the sets D_1, D_2
+   |C_(5)_1 with cr=2| = 36
+   |C_(5)_1 with cr=4| = 36
+   |C_(5)_2 with cr=2| = 36
+   |C_(5)_2 with cr=4| = 36
+   |D_1| = 72, |D_2| = 72
+   |D_1 cap D_2| = 0
+   |D_1 union D_2| = 144
+   Number of inverses of D_1 outside D_1 = 0
+   Number of inverses of D_2 outside D_2 = 0
+
+6. Sylow-5 description of D_1
+   Number of listed generators in D_1 = 18
+   Number of distinct generated subgroups = 18
+   |D_1 minus Sylow union| = 0
+   |Sylow union minus D_1| = 0
+   Hence |D_1| from Sylow union = 72
+
+7. Twisted T identities
+   C_(2,2) * T value sets on classes [ "0", "(2,2)", "(3)", "(3,3)", 
+  "(4,2)", "D_1", "D_2" ] = [ [ 0 ], [ 0 ], [ 0 ], [ 0 ], [ 0 ], [ 0 ], 
+  [ 0 ] ]
+   C_(4,2) * T value sets on classes [ "0", "(2,2)", "(3)", "(3,3)", 
+  "(4,2)", "D_1", "D_2" ] = [ [ 0 ], [ 0 ], [ 0 ], [ 0 ], [ 0 ], [ 0 ], 
+  [ 0 ] ]
+   C_(3) * T value sets on classes [ "0", "(2,2)", "(3)", "(3,3)", "(4,2)", 
+  "D_1", "D_2" ] = [ [ 0 ], [ 0 ], [ 0 ], [ 0 ], [ 0 ], [ -5 ], [ 5 ] ]
+   C_(3,3) * T value sets on classes [ "0", "(2,2)", "(3)", "(3,3)", 
+  "(4,2)", "D_1", "D_2" ] = [ [ 0 ], [ 0 ], [ 0 ], [ 0 ], [ 0 ], [ -5 ], 
+  [ 5 ] ]
+   T^2 value sets on classes [ "0", "(2,2)", "(3)", "(3,3)", "(4,2)", "D_1", 
+  "D_2" ] = [ [ 144 ], [ 0 ], [ -18 ], [ -18 ], [ 0 ], [ 9 ], [ 9 ] ]
+
+8. Local graphs in the original and twisted partitions
+   Original Gamma_C(3)(C_(5)_1): degree set = [ 5 ], component sizes = 
+[ 12, 12, 12, 12, 12, 12 ]
+   Componentwise isomorphic to the icosahedral graph = 
+[ true, true, true, true, true, true ]
+   Neighbors of x0 in original Gamma_C(3)(C_(5)_1):
+      (1,2,4,5,3)
+      (1,2,5,3,4)
+      (1,3,4,2,5)
+      (1,4,2,3,5)
+      (1,4,5,2,3)
+   Gamma_C(3)(D_1): degree set = [ 5 ], component sizes = [ 72 ]
+   Gamma_C(3,3)(D_1): degree set = [ 5 ], component sizes = [ 72 ]
+   Gamma_C(3)(D_2): degree set = [ 5 ], component sizes = [ 72 ]
+   Gamma_C(3,3)(D_2): degree set = [ 5 ], component sizes = [ 72 ]
+   Thus no twisted candidate local graph has six 12-vertex components.
+
+9. Triangle counts in Gamma_C(3)(D_1)
+   Set of triangle counts per vertex = [ 1, 3 ]
+   Number of vertices with tau=1 = 36
+   Number of vertices with tau=3 = 36
+   Triangle-count distribution = [ [ 1, 36 ], [ 3, 36 ] ]
+
+10. The ten 3+3 cuts
+   Number of 3+3 cuts up to complement = 10
+   Cut condition defect counts [3-subset, coefficient defects] = 
+[ [ [ 1, 2, 3 ], 0 ], [ [ 1, 2, 4 ], 0 ], [ [ 1, 2, 5 ], 0 ], 
+  [ [ 1, 2, 6 ], 0 ], [ [ 1, 3, 4 ], 0 ], [ [ 1, 3, 5 ], 0 ], 
+  [ [ 1, 3, 6 ], 0 ], [ [ 1, 4, 5 ], 0 ], [ [ 1, 4, 6 ], 0 ], 
+  [ [ 1, 5, 6 ], 0 ] ]
+   Number of 3+3 cuts satisfying all T-identities = 10
+
+11. Exhaustive check of nontrivial A6 partitions
+   Linear nullity for the split 5-cycle pair = 10
+   Balanced sign vectors in the linear solution space = 11
+   Nontrivial partitions satisfying all conditions = 10
+   Number of cut partitions from the 3+3 cut search = 10
+   Number of found partitions that are 3+3 cut partitions = 10
+   A6-orbit size of the first cut partition = 10
+   Number of cut partitions in that A6-orbit = 10
+
+Done.

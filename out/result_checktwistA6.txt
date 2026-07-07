@@ -1,0 +1,24 @@
+
+============================================================
+AssociationSchemes package check for the A6 twist
+============================================================
+
+Valencies of the original group scheme = [ 1, 45, 40, 40, 90, 72, 72 ]
+Class sizes of the twisted partition  = [ 1, 45, 40, 40, 90, 72, 72 ]
+Relation matrix size: 360
+Group scheme is an association scheme? true
+Twisted scheme is an association scheme? true
+Algebraically isomorphic? true
+Combinatorially isomorphic? false
+
+--------------------------------
+Schurity and automorphism groups
+--------------------------------
+Group scheme is Schurian? true
+Aut(group scheme) size = 259200
+Aut(group scheme) structure = (A6 x A6) : C2
+Twisted scheme is Schurian? false
+Aut(twisted scheme) size = 12960
+Aut(twisted scheme) structure = ((C3 x C3) : C4) x A6
+
+Done.
