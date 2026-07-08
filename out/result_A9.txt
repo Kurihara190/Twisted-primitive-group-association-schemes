@@ -1,0 +1,89 @@
+
+============================================================
+Class-algebra checks for A9
+============================================================
+
+1. Character table class data
+   Concrete classes = [ "C0", "C22", "C2222", "C3", "C322", "C33", "C333", "C42", "C432", "C44", "C5", "C522", "C531", 
+  "C532", "C62", "C7", "C91", "C92" ]
+   Orders      = [ 1, 2, 2, 3, 6, 3, 3, 4, 12, 4, 5, 10, 15, 15, 6, 7, 9, 9 ]
+   Sizes       = [ 1, 378, 945, 168, 7560, 3360, 2240, 7560, 15120, 11340, 3024, 9072, 12096, 12096, 30240, 25920, 
+  20160, 20160 ]
+
+2. Same-size non-example C_(3,2,2) and C_(4,2)
+   Coefficient vector for C_(2,2)*(C_(3,2,2)-C_(4,2)) = [ 0, 40, -24, -135, 10, -45, 27, -8, 13, 12, -40, 5, 5, 5, 3, 
+  -14, 0, 0 ]
+   S^2 coefficient on C_(3,2,2) = 162
+   S^2 coefficient on C_(4,2)   = -132
+
+3. Split 9-cycle classes
+   Eigenvalue from C_(2,2) on chi_S = -54
+   C*S coefficient data [class, lambda, coefficient vector] = 
+[ [ "C0", 1, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, -1 ] ], 
+  [ "C22", -54, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -54, 54 ] ], 
+  [ "C2222", 81, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 81, -81 ] ], 
+  [ "C3", 24, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, -24 ] ], 
+  [ "C322", 216, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 216, -216 ] ], 
+  [ "C33", 192, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 192, -192 ] ], 
+  [ "C333", -64, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -64, 64 ] ], 
+  [ "C42", -216, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -216, 216 ] ], 
+  [ "C432", -432, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -432, 432 ] ], 
+  [ "C44", -324, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -324, 324 ] ], 
+  [ "C5", 0, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ] ], 
+  [ "C522", 0, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ] ], 
+  [ "C531", 0, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ] ], 
+  [ "C532", 0, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ] ], 
+  [ "C62", 0, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ] ], 
+  [ "C7", 0, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ] ] ]
+   S^2 coefficient vector = [ 40320, -5760, 3456, 5760, 1152, 2304, -1152, -1152, -1152, -1152, 0, 0, 0, 0, 0, 0, 576, 
+  576 ]
+
+4. Split (5,3)-classes
+   Eigenvalue from C_(3) on chi_S = -24
+   C*S coefficient data [class, lambda, coefficient vector] = 
+[ [ "C0", 1, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, -1, 0, 0, 0, 0 ] ], 
+  [ "C22", 18, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, -18, 0, 0, 0, 0 ] ], 
+  [ "C2222", -135, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -135, 135, 0, 0, 0, 0 ] ], 
+  [ "C3", -24, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -24, 24, 0, 0, 0, 0 ] ], 
+  [ "C322", 360, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 360, -360, 0, 0, 0, 0 ] ], 
+  [ "C33", 0, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ] ], 
+  [ "C333", 320, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 320, -320, 0, 0, 0, 0 ] ], 
+  [ "C42", -360, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -360, 360, 0, 0, 0, 0 ] ], 
+  [ "C432", -720, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -720, 720, 0, 0, 0, 0 ] ], 
+  [ "C44", 540, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 540, -540, 0, 0, 0, 0 ] ], 
+  [ "C5", 144, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 144, -144, 0, 0, 0, 0 ] ], 
+  [ "C522", 432, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 432, -432, 0, 0, 0, 0 ] ], 
+  [ "C62", 0, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ] ], 
+  [ "C7", 0, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ] ], 
+  [ "C91", 0, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ] ], 
+  [ "C92", 0, [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ] ] ]
+   S^2 coefficient vector = [ -24192, -1152, 3456, 3456, -1152, 0, -3456, 1152, 1152, -1152, -1152, -1152, 576, 576, 
+  0, 0, 0, 0 ]
+
+5. Centralizer-orbit quotient checks over GF(101)
+   These quotient matrices record the action on functions fixed by the
+   centralizer of one vertex.  The character checks below verify that
+   every irreducible constituent of the conjugation permutation module
+   has a nonzero vector fixed by this centralizer, so a larger full
+   eigenspace would also be visible in the quotient.
+
+   Split 9-cycle quotient for A_(2,2)+54I
+      |Omega| = 40320, |C_(2,2)| = 378, |C_G(x)| = 9, quotient size = 4492
+      nullity over GF(101) = 1
+
+      Character visibility check for the full conjugation module
+         irreducible constituents invisible to the quotient = [  ]
+         certificate data [quotient nullity, invisible constituents] = [ 1, [  ] ]
+
+   Split (5,3)-quotient for A_(3)+24I
+      |Omega| = 24192, |C_(3)| = 168, |C_G(x)| = 15, quotient size = 1664
+      nullity over GF(101) = 1
+
+      Character visibility check for the full conjugation module
+         irreducible constituents invisible to the quotient = [  ]
+         certificate data [quotient nullity, invisible constituents] = [ 1, [  ] ]
+
+Note: the rank computations are done on centralizer-orbit quotients.
+      The character visibility checks show that, for these A9 modules,
+      no nonzero eigenspace constituent can be hidden from the quotient.
+Done.
