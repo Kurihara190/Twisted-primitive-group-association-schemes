@@ -1,0 +1,13 @@
+
+============================================================
+Rigidity check for A7
+============================================================
+
+Class sizes [C0,C22,C3,C322,C33,C42,C5,C7_1,C7_2] =
+   [ 1, 105, 70, 210, 280, 630, 504, 360, 360 ]
+Degree set of G_(2,2) on Omega = [ 35 ]
+Entrywise quotients (A_(2,2)*chi_S)/chi_S = [ -21 ]
+dim Ker(A_(2,2)+21I) over GF(1009) = 1
+This finite-field check verifies the claimed one-dimensional eigenspace.
+
+Done.
