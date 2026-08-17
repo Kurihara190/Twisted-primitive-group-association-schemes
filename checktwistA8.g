@@ -49,18 +49,16 @@ for i in [1..Length(elts)] do
     od;
 od;
 
-TwistedScheme := AssociationScheme(M);
+Print("Relation matrix size: ", Length(M), "\n");
+
+
+TwistedScheme := HomogeneousCoherentConfiguration(M);
 
 algIso := AreAlgebraicallyIsomorphicHomogeneousCoherentConfigurations(
     GroupScheme, TwistedScheme);
 # combIso := AreIsomorphicHomogeneousCoherentConfigurations(
 #     GroupScheme, TwistedScheme);
 
-GroupSchemeIsSchurian := IsSchurian(GroupScheme);
-TwistedSchemeIsSchurian := IsSchurian(TwistedScheme);
-
-
-Print("Relation matrix size: ", Length(M), "\n");
 Print("Group scheme is an association scheme? ",
       IsHomogeneousCoherentConfiguration(GroupScheme), "\n");
 Print("Twisted scheme is an association scheme? ",
@@ -71,7 +69,11 @@ Print("Algebraically isomorphic? ", algIso, "\n");
 Print("--------------------------------\n");
 Print("Schurity\n");
 Print("--------------------------------\n");
+
+GroupSchemeIsSchurian := IsSchurian(GroupScheme);
 Print("Group scheme is Schurian? ", GroupSchemeIsSchurian, "\n");
+
+TwistedSchemeIsSchurian := IsSchurian(TwistedScheme);
 Print("Twisted scheme is Schurian? ", TwistedSchemeIsSchurian, "\n");
 
 Print("Done.\n");
