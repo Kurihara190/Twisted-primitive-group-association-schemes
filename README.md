@@ -7,7 +7,7 @@ by Akihiro Higashitani, Masanari Kamiya, and Hirotake Kurihara.
 The paper studies whether the intersection numbers of a primitive group
 association scheme determine it up to combinatorial isomorphism. Its main
 theoretical construction gives, for a broad infinite family of groups
-$\operatorname{PSL}(2,q)$, Cayley association schemes that are algebraically
+$\mathrm{PSL}(2,q)$, Cayley association schemes that are algebraically
 isomorphic to the corresponding group association schemes but are not
 combinatorially isomorphic to them. In particular, these group association
 schemes are non-separable. The construction applies when $q$ is an odd prime
@@ -23,7 +23,7 @@ paper:
   $\mathfrak A_9$ under the paper's two-class twisting criterion; and
 - an exhaustive search over all groups of order at most $200$.
 
-The $\operatorname{PSL}(2,q)$ construction is proved theoretically in the
+The $\mathrm{PSL}(2,q)$ construction is proved theoretically in the
 paper; this repository does not contain a separate script for that construction.
 
 ## Repository contents
